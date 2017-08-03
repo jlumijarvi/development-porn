@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="position: absolute; width: 100%; height: 100%; background: black;">
+<div class="blue-flat" style="position: absolute; width: 100%; height: 100%; background: black;">
   <div style="display: flex; height: 100%;">
     <div style="width: 100px; background: red;">
       LEFT-NAV
@@ -11,6 +11,7 @@
         HEADER
       </div>
       <div style="background: yellow; margin: 20px; padding: 20px;">
+        <button class="btn btn-primary">TEST</button>
         CONTENT
       </div>
       <div style="background: cyan; margin: 20px; padding: 20px;">
@@ -23,3 +24,30 @@
   </div>
 </div>
 
+<!--
+
+@mixin theme($themeName, $ $ $){
+  .${themeName} {
+    .btn {
+      padding: 20px;
+    }
+  }
+}
+
+@import 'red';
+@import 'flat';
+new theme(red, $primaryColor, $secondaryColor, $borderRadius, $padding);
+
+@import 'blue';
+@include theme(blue-flat, $primaryColor, $secondaryColor, $borderRadius, $padding);
+
+
+@mixin theme($themeName, $ $ $){
+  .${themeName} {
+    .btn {
+
+    }
+  }
+}
+
+-->

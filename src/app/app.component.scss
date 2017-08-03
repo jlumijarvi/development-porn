@@ -1,0 +1,14 @@
+
+@mixin theme($themeName, $primaryColor) {
+  .#{$themeName} {
+    .btn.btn-primary {
+      background-color: $primaryColor;
+    }
+  }
+}
+
+@import '../themes/red';
+@include theme('red-flat', $primaryColor);
+
+@import '../themes/blue';
+@include theme('blue-flat', $primaryColor);
