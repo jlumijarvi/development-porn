@@ -1,0 +1,39 @@
+@import 'red';
+@import 'flat';
+@import 'transitions';
+@include theme('red-flat-transitions');
+
+@import 'blue';
+//@import 'flat';
+//@import 'transitions';
+@include theme('blue-flat-transitions');
+
+@import 'red';
+@import 'round';
+//@import 'transitions';
+@include theme('red-round-transitions');
+
+@import 'blue';
+//@import 'round';
+//@import 'transitions';
+@include theme('blue-round-transitions');
+
+@import 'red';
+@import 'flat';
+@import 'no-transitions';
+@include theme('red-flat-no-transitions');
+
+@import 'blue';
+//@import 'flat';
+//@import 'no-transitions';
+@include theme('blue-flat-no-transitions');
+
+@import 'red';
+@import 'round';
+//@import 'no-transitions';
+@include theme('red-round-no-transitions');
+
+@import 'blue';
+//@import 'round';
+//@import 'no-transitions';
+@include theme('blue-round-no-transitions');

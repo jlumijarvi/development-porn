@@ -1,0 +1,18 @@
+.dp-content {
+  height: 100%;
+}
+
+@mixin theme($themeName) {
+  /deep/ {
+    .#{$themeName} {
+      .dp-content {
+        div {
+          transition: all $themeTransitionLength linear;
+          border-radius: $borderRadius;
+        }
+      }
+    }
+  }
+}
+
+@import '../../themes/theme.generator';

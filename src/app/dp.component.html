@@ -1,0 +1,70 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<dp-theme-wrapper>
+  <div style="display: flex; height: 100%;">
+    <div style="width: 100px; background: red;">
+      LEFT-NAV
+      <span class="glyphicon glyphicon-adjust"></span>
+      <i class="fa fa-fw fa-envelope"></i>
+    </div>
+    <dp-content-wrapper style="flex: 1;">
+      <div style="background: green; padding: 20px 5px 20px 5px; text-align: right;">
+        HEADER
+      </div>
+      <dp-content>
+        <div style="background: black; margin: 20px; padding: 20px;">
+          <div class="row">
+            <div class="col-xs-8"></div>
+            <section class="col-xs-4" style="display: block;">
+              <section style="display:flex; flex: 1;">
+                <button class="btn btn-primary" (click)="themeService.setColorTheme('red')">Red theme</button>
+                <button class="btn btn-primary" (click)="themeService.setColorTheme('blue')">Blue theme</button>
+              </section>
+              <section style="display:flex; flex: 1;">
+                <button class="btn btn-primary" (click)="themeService.setLayoutTheme('flat')">Flat theme</button>
+                <button class="btn btn-primary" (click)="themeService.setLayoutTheme('round')">Round theme</button>
+              </section>
+              <section style="display:flex; flex: 1;">
+                <button class="btn btn-primary" (click)="themeService.enableTransitions()">Transitions ON</button>
+                <button class="btn btn-primary" (click)="themeService.disableTransitions()">Transitions OFF</button>
+              </section>
+            </section>
+          </div>
+        </div>
+        <div style="background: black; margin: 20px; padding: 20px;">
+          DISCUSSION
+        </div>
+      </dp-content>
+    </dp-content-wrapper>
+    <div style="width: 200px; background: blue;">
+      RIGHT PANEL
+    </div>
+  </div>
+</dp-theme-wrapper>
+
+<!--
+
+@mixin theme($themeName, $ $ $){
+  .${themeName} {
+    .btn {
+      padding: 20px;
+    }
+  }
+}
+
+@import 'red';
+@import 'flat';
+new theme(red, $primaryColor, $secondaryColor, $borderRadius, $padding);
+
+@import 'blue';
+@include theme(blue-flat, $primaryColor, $secondaryColor, $borderRadius, $padding);
+
+
+@mixin theme($themeName, $ $ $){
+  .${themeName} {
+    .btn {
+
+    }
+  }
+}
+
+-->
