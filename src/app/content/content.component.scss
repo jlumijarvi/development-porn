@@ -6,7 +6,10 @@
   /deep/ {
     .#{$themeName} {
       .dp-content {
-        background-color: lighten($colorPrimary, 28%);
+        div {
+          transition: all $themeTransitionLength linear;
+          border-radius: $borderRadius;
+        }
       }
     }
   }

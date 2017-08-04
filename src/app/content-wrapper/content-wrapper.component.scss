@@ -1,0 +1,15 @@
+.dp-content-wrapper {
+  height: 100%;
+}
+
+@mixin theme($themeName) {
+  /deep/ {
+    .#{$themeName} {
+      .dp-content-wrapper {
+        background-color: lighten($colorPrimary, 28%);
+      }
+    }
+  }
+}
+
+@import '../../themes/theme.generator';
