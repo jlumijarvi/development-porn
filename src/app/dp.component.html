@@ -6,22 +6,33 @@
       <span class="glyphicon glyphicon-adjust"></span>
       <i class="fa fa-fw fa-envelope"></i>
     </div>
-    <div style="flex: 1; background-color: white;">
+    <dp-content style="flex: 1;">
       <div style="background: green; padding: 20px 5px 20px 5px; text-align: right;">
         HEADER
       </div>
       <div style="background: yellow; margin: 20px; padding: 20px;">
-        <button class="btn btn-primary" (click)="themeService.setColorTheme('red')">Set red theme</button>
-        <button class="btn btn-primary" (click)="themeService.setColorTheme('blue')">Set blue theme</button>
-        <button class="btn btn-primary" (click)="themeService.setLayoutTheme('flat')">Set flat theme</button>
-        <button class="btn btn-primary" (click)="themeService.setLayoutTheme('round')">Set round theme</button>
-        <button class="btn btn-primary" (click)="themeService.enableTransitions()">Transitions ON</button>
-        <button class="btn btn-primary" (click)="themeService.disableTransitions()">Transitions OFF</button>
+        <div class="row">
+          <div class="col-xs-8"></div>
+        <section class="col-xs-4" style="display: block;">
+          <section style="display:flex; flex: 1;">
+            <button class="btn btn-primary" (click)="themeService.setColorTheme('red')">Red theme</button>
+            <button class="btn btn-primary" (click)="themeService.setColorTheme('blue')">Blue theme</button>
+          </section>
+          <section style="display:flex; flex: 1;">
+            <button class="btn btn-primary" (click)="themeService.setLayoutTheme('flat')">Flat theme</button>
+            <button class="btn btn-primary" (click)="themeService.setLayoutTheme('round')">Round theme</button>
+          </section>
+          <section style="display:flex; flex: 1;">
+            <button class="btn btn-primary" (click)="themeService.enableTransitions()">Transitions ON</button>
+            <button class="btn btn-primary" (click)="themeService.disableTransitions()">Transitions OFF</button>
+          </section>
+        </section>
+        </div>
       </div>
       <div style="background: cyan; margin: 20px; padding: 20px;">
         DISCUSSION
       </div>
-    </div>
+    </dp-content>
     <div style="width: 200px; background: blue;">
       RIGHT PANEL
     </div>

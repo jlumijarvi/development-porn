@@ -6,6 +6,13 @@
         border-color: $colorDark;
         border-radius: $borderRadius;
         transition: all $themeTransitionLength linear;
+        flex: 1;
+        &:active, &:focus {
+          flex: 2.5;
+          &.btn-primary {
+            background-color: $colorDark;
+          }
+        }
       }
       .btn.btn-primary {
         background-color: $colorPrimary;
@@ -22,32 +29,4 @@
   }
 }
 
-@import '../themes/red';
-@import '../themes/flat';
-$themeTransitionLength: 250ms;
-@include theme('red-flat-transitions');
-
-@import '../themes/blue';
-@include theme('blue-flat-transitions');
-
-@import '../themes/red';
-@import '../themes/round';
-@include theme('red-round-transitions');
-
-@import '../themes/blue';
-@include theme('blue-round-transitions');
-
-@import '../themes/red';
-@import '../themes/flat';
-$themeTransitionLength: 0ms;
-@include theme('red-flat-no-transitions');
-
-@import '../themes/blue';
-@include theme('blue-flat-no-transitions');
-
-@import '../themes/red';
-@import '../themes/round';
-@include theme('red-round-no-transitions');
-
-@import '../themes/blue';
-@include theme('blue-round-no-transitions');
+@import 'theme.generator';
